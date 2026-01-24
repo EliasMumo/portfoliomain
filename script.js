@@ -1,7 +1,3 @@
-(function() {
-    emailjs.init("BJL3Y8p2u-hBepb9v");
-})();
-
 document.addEventListener('DOMContentLoaded', (event) => {
     // ===== TYPING ANIMATION =====
     const typingText = document.querySelector('.typing-text');
@@ -97,37 +93,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 behavior: 'smooth'
             });
         });
-    });
-
-    // ===== CONTACT FORM =====
-    const form = document.getElementById('contact-form');
-    const formStatus = document.getElementById('form-status');
-
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const btn = form.querySelector('button[type="submit"]');
-        const originalBtnText = btn.textContent;
-        btn.textContent = 'Sending...';
-        btn.disabled = true;
-
-        this.contact_number.value = Math.random() * 100000 | 0;
-        
-        emailjs.sendForm('service_v00m7y7', 'template_fr6mvjs', this)
-            .then(function() {
-                console.log('SUCCESS!');
-                formStatus.textContent = 'Thank you for your message! I will get back to you soon.';
-                formStatus.style.color = '#10b981';
-                form.reset();
-            }, function(error) {
-                console.log('FAILED...', error);
-                formStatus.textContent = 'Sorry, there was an error sending your message. Please try again later.';
-                formStatus.style.color = '#ef4444';
-            })
-            .finally(function() {
-                btn.textContent = originalBtnText;
-                btn.disabled = false;
-            });
     });
 
     // ===== CV DOWNLOAD TRACKING =====
