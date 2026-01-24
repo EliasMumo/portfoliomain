@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elias Mumo - Creative Software Developer crafting beautiful digital experiences">
+    <meta name="keywords" content="software developer, web developer, JavaScript, HTML, CSS, portfolio">
     <title>Elias Mumo - Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -25,11 +30,37 @@
         </nav>
     </header>
 
+    <!-- Floating background shapes -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Theme toggle button -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <i class='bx bx-moon' id="theme-icon"></i>
+    </button>
+
     <main>
         <section id="hero">
-            <h1>Elias Mumo</h1>
-            <h2>Software Developer</h2>
-            <a href="#contact" class="cta-button">Get in Touch</a>
+            <div class="hero-content">
+                <span class="hero-greeting">Hello, I'm</span>
+                <h1>Elias Mumo</h1>
+                <h2 class="typing-container">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-tagline">Turning ideas into elegant digital experiences</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="cta-button">Get in Touch</a>
+                    <a href="#projects" class="cta-button secondary">View Work</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <i class='bx bx-chevron-down'></i>
+            </div>
         </section>
 
         <section id="about">
@@ -40,14 +71,43 @@
 
         <section id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li><i class='bx bxl-html5'></i>HTML</li>
-                <li><i class='bx bxl-css3'></i>CSS</li>
-                <li><i class='bx bxl-javascript'></i>JavaScript</li>
-                <li><i class='bx bx-mobile-alt'></i>Responsive Web Design</li>
-                <li><i class='bx bxl-github'></i>GitHub</li>
-                <li><i class='bx bxl-ubuntu'></i>Ubuntu</li>
-            </ul>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bxl-html5'></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bxl-css3'></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bxl-javascript'></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 80%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bx-mobile-alt'></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 88%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class='bx bxl-github'></i>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 75%"></div></div>
+                </div>
+            </div>
         </section>
 
         <section id="education">
@@ -121,7 +181,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Elias Mumo. All rights reserved.</p>
+        <p>Crafted with <i class='bx bx-heart'></i> by Elias Mumo &copy; 2026</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
