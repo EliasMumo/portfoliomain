@@ -48,6 +48,10 @@ Feel free to reach out to me if you have any questions or collaboration opportun
 - Collaborate on industry projects and open-source contributions
 - Continue building a portfolio with real-world projects
 
+## Projects
+
+- **DwellMerge** — Live: https://www.dwellmerge.com/ · GitHub: https://github.com/EliasMumo/dwellmerge
+
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).

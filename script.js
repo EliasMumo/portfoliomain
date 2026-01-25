@@ -142,6 +142,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         observer.observe(card);
     });
 
+    // Observe project cards for animations
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.classList.add('animate-in');
+        observer.observe(card);
+    });
+
     // ===== NAVBAR SCROLL EFFECT =====
     let lastScroll = 0;
     const header = document.querySelector('header');
