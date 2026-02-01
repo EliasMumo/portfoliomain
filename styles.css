@@ -812,6 +812,13 @@ h2::after {
     font-size: 1.1rem;
 }
 
+.download-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .download-button {
     border-radius: 100px;
 }
