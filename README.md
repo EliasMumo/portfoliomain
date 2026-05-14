@@ -51,8 +51,10 @@ Feel free to reach out to me if you have any questions or collaboration opportun
 ## Projects
 
 - **DwellMerge** — Live: https://www.dwellmerge.com/ · GitHub: https://github.com/EliasMumo/dwellmerge
+- **Kotara** — Live: https://kotara.co.ke/
+- **Prime Predict Tips** — Live: https://www.primepredicttips.com/
+- **Football Predictions Pro Tips** — Google Play: https://play.google.com/store/apps/details?id=com.flore.footballtips
 
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
-
