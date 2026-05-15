@@ -1,269 +1,571 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Elias Mumo - Creative Software Developer crafting beautiful digital experiences">
-    <meta name="keywords" content="software developer, web developer, JavaScript, HTML, CSS, portfolio">
-    <title>Elias Mumo - Software Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Elias Mumo - Creative Software Developer crafting beautiful digital experiences" name="description"/>
+<title>Elias Mumo - Software Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-container": "#00424e",
+                      "on-error": "#690005",
+                      "on-surface": "#d4e4fa",
+                      "secondary-fixed": "#acedff",
+                      "on-surface-variant": "#cbc3d7",
+                      "tertiary-fixed": "#ffdcbb",
+                      "surface-container": "#122131",
+                      "outline": "#958ea0",
+                      "on-background": "#d4e4fa",
+                      "surface-bright": "#2c3a4c",
+                      "on-secondary-fixed-variant": "#004e5c",
+                      "on-secondary-fixed": "#001f26",
+                      "secondary-fixed-dim": "#4cd7f6",
+                      "on-primary-fixed-variant": "#5516be",
+                      "on-tertiary-container": "#3f2300",
+                      "secondary": "#4cd7f6",
+                      "on-primary-container": "#340080",
+                      "error": "#ffb4ab",
+                      "on-error-container": "#ffdad6",
+                      "outline-variant": "#494454",
+                      "primary-container": "#a078ff",
+                      "secondary-container": "#03b5d3",
+                      "on-tertiary-fixed-variant": "#673d00",
+                      "inverse-primary": "#6d3bd7",
+                      "surface-container-lowest": "#010f1f",
+                      "inverse-surface": "#d4e4fa",
+                      "background": "#051424",
+                      "on-primary": "#3c0091",
+                      "primary": "#d0bcff",
+                      "tertiary": "#ffb869",
+                      "on-primary-fixed": "#23005c",
+                      "primary-fixed-dim": "#d0bcff",
+                      "surface-container-highest": "#273647",
+                      "on-tertiary": "#482900",
+                      "surface-variant": "#273647",
+                      "tertiary-container": "#ca801e",
+                      "surface": "#051424",
+                      "surface-dim": "#051424",
+                      "on-secondary": "#003640",
+                      "surface-tint": "#d0bcff",
+                      "error-container": "#93000a",
+                      "surface-container-high": "#1c2b3c",
+                      "primary-fixed": "#e9ddff",
+                      "surface-container-low": "#0d1c2d",
+                      "inverse-on-surface": "#233143",
+                      "tertiary-fixed-dim": "#ffb869",
+                      "on-tertiary-fixed": "#2c1700"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "gutter": "1.5rem",
+                      "margin-mobile": "1rem",
+                      "stack-sm": "0.5rem",
+                      "stack-md": "1.5rem",
+                      "stack-lg": "4rem"
+              },
+              "fontFamily": {
+                      "headline-xl-mobile": [
+                              "Montserrat"
+                      ],
+                      "headline-lg-mobile": [
+                              "Montserrat"
+                      ],
+                      "headline-xl": [
+                              "Montserrat"
+                      ],
+                      "headline-md": [
+                              "Montserrat"
+                      ],
+                      "headline-lg": [
+                              "Montserrat"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "code-label": [
+                              "JetBrains Mono"
+                      ]
+              },
+              "fontSize": {
+                      "headline-xl-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-xl": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "code-label": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+</script>
+<style>
+@media (max-width: 640px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hero-copy {
+    max-width: calc(100vw - 2rem) !important;
+    font-size: 16px !important;
+    overflow-wrap: break-word;
+  }
+
+  #mobile-menu-button {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+}
+
+</style>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="menu-icon">
-                <i class='bx bx-menu'></i>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#interests">Interests</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Floating background shapes -->
-    <div class="bg-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-    </div>
-
-    <!-- Theme toggle button -->
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-        <i class='bx bx-moon' id="theme-icon"></i>
-    </button>
-
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <span class="hero-greeting">Hello, I'm</span>
-                <h1>Elias Mumo</h1>
-                <h2 class="typing-container">
-                    <span class="typing-text"></span>
-                    <span class="cursor">|</span>
-                </h2>
-                <p class="hero-tagline">Turning ideas into elegant digital experiences</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="cta-button">Get in Touch</a>
-                    <a href="#projects" class="cta-button secondary">View Work</a>
-                </div>
-                <div class="hero-proof" aria-label="Portfolio highlights">
-                    <span><strong>4+</strong> shipped builds</span>
-                    <span><strong>Web</strong> experiences</span>
-                    <span><strong>Android</strong> client app</span>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <span>Scroll</span>
-                <i class='bx bx-chevron-down'></i>
-            </div>
-        </section>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Passionate software developer with expertise in building responsive, user-centric web applications. My journey into software development began during my teenage years, driven by the dream of creating impactful digital solutions. Today, with certifications in HTML, CSS, JavaScript, and modern development practices, I craft software that delivers exceptional user experiences.</p>
-            <p>I am eager to collaborate on real-world challenges, bringing creativity, technical expertise, and a problem-solving mindset to help businesses achieve their digital goals.</p>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class='bx bxl-html5'></i>
-                    </div>
-                    <h3>HTML5</h3>
-                    <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class='bx bxl-css3'></i>
-                    </div>
-                    <h3>CSS3</h3>
-                    <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class='bx bxl-javascript'></i>
-                    </div>
-                    <h3>JavaScript</h3>
-                    <div class="skill-bar"><div class="skill-progress" style="--progress: 80%"></div></div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class='bx bx-mobile-alt'></i>
-                    </div>
-                    <h3>Responsive Design</h3>
-                    <div class="skill-bar"><div class="skill-progress" style="--progress: 88%"></div></div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class='bx bxl-github'></i>
-                    </div>
-                    <h3>Git & GitHub</h3>
-                    <div class="skill-bar"><div class="skill-progress" style="--progress: 75%"></div></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education">
-            <h2>Education & Certifications</h2>
-            <ul>
-                <li>
-                    <h3>Responsive Web Design Certification</h3>
-                    <p>freeCodeCamp</p>
-                    <a href="https://www.freecodecamp.org/certification/EliasMumo/responsive-web-design" target="_blank" rel="noopener noreferrer">View Certificate</a>
-                </li>
-                <li>
-                    <h3>HTML Certification</h3>
-                    <p>Codedex</p>
-                    <a href="https://www.codedex.io/certificates/8c106e5b-80da-484a-b399-aff2e591614b" target="_blank" rel="noopener noreferrer">View Certificate</a>
-                </li>
-                <li>
-                    <h3>CSS Certification</h3>
-                    <p>Codedex</p>
-                    <a href="https://www.codedex.io/certificates/47af8b7b-51b1-4b9e-8f10-fe8a3ae8ad23" target="_blank" rel="noopener noreferrer">View Certificate</a>
-                </li>
-                <li>
-                    <h3>JavaScript Certification</h3>
-                    <p>Codedex</p>
-                    <a href="https://www.codedex.io/certificates/377ac906-d771-4251-8a9d-1a1a21946ba5" target="_blank" rel="noopener noreferrer">View Certificate</a>
-                </li>
-                <li>
-                    <h3>Power Learn Project Certification</h3>
-                    <p>Power Learn Project Africa</p>
-                    <a href="https://academy.powerlearnprojectafrica.org/certificates?scholarship=75da9624-f5ad-46fd-a855-492328893f26" target="_blank" rel="noopener noreferrer">View Certificate</a>
-                </li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-header">
-                        <i class='bx bx-home-alt-2 project-icon' aria-hidden="true"></i>
-                        <h3>DwellMerge</h3>
-                    </div>
-                    <p class="project-desc">A rental property search platform built to help users discover homes with a focused, modern browsing experience.</p>
-                    <div class="project-tags">
-                        <span>Real Estate</span>
-                        <span>Web App</span>
-                        <span>Responsive UI</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://www.dwellmerge.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open DwellMerge live site">
-                            <i class='bx bx-link-external'></i>
-                            <span>Live Site</span>
-                        </a>
-                        <a href="https://github.com/EliasMumo/dwellmerge" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open DwellMerge GitHub repository">
-                            <i class='bx bxl-github'></i>
-                            <span>GitHub</span>
-                        </a>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-header">
-                        <i class='bx bx-building project-icon' aria-hidden="true"></i>
-                        <h3>Kotara</h3>
-                    </div>
-                    <p class="project-desc">A professional company website built for a client.</p>
-                    <div class="project-tags">
-                        <span>Business Website</span>
-                        <span>Client Work</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://kotara.co.ke/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Kotara live site">
-                            <i class='bx bx-link-external'></i>
-                            <span>Live Site</span>
-                        </a>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-header">
-                        <i class='bx bx-line-chart project-icon' aria-hidden="true"></i>
-                        <h3>Prime Predict Tips</h3>
-                    </div>
-                    <p class="project-desc">A sports prediction website with football tips and match insights.</p>
-                    <div class="project-tags">
-                        <span>Sports Tips</span>
-                        <span>Live Site</span>
-                        <span>Analytics UI</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://www.primepredicttips.com/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Prime Predict Tips live site">
-                            <i class='bx bx-link-external'></i>
-                            <span>Live Site</span>
-                        </a>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-header">
-                        <i class='bx bx-mobile-alt project-icon' aria-hidden="true"></i>
-                        <h3>Football Predictions Pro Tips</h3>
-                    </div>
-                    <p class="project-desc">A client Android app for daily football predictions, high-odds tips, and match analysis.</p>
-                    <div class="project-tags">
-                        <span>Google Play</span>
-                        <span>Client App</span>
-                        <span>Mobile</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.flore.footballtips" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Football Predictions Pro Tips on Google Play">
-                            <i class='bx bxl-play-store'></i>
-                            <span>Google Play</span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="interests">
-            <h2>Interests</h2>
-            <p>I am deeply interested in web and mobile development, crafting websites and applications that are visually appealing and functional. When not coding, I enjoy movies and long walks, which inspire my creativity and problem-solving mindset.</p>
-        </section>
-
-        <section id="cv">
-            <h2>Download CV</h2>
-            <p>Get a detailed overview of my skills and experience by downloading my CV.</p>
-            <a href="curriculumvitae.pdf" download="curriculumvitae.pdf" class="download-button">
-                <i class='bx bx-download'></i> Download CV
+<body class="bg-background text-on-surface antialiased font-body-md overflow-x-hidden selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<header class="bg-surface/80 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-white/10 flat no shadows">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">Elias Mumo</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#about">About</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#skills">Skills</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#projects">Projects</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#connect">Connect</a>
+</nav>
+<a class="hidden md:flex items-center gap-2 bg-primary text-on-primary px-6 py-2 rounded font-code-label text-code-label hover:opacity-90 transition-opacity" download="curriculumvitae.pdf" href="curriculumvitae.pdf">
+                Download CV
             </a>
-        </section>
-
-        <section id="contact">
-            <h2>Let's Connect</h2>
-            <p class="contact-intro">Have a project in mind or just want to say hello? I'd love to hear from you!</p>
-            <a href="mailto:elismisfit@gmail.com" class="email-button" aria-label="Send me an email">
-                <i class='bx bx-envelope'></i>
+<button aria-controls="mobile-nav" aria-expanded="false" aria-label="Open navigation" class="text-primary font-code-label text-code-label" id="mobile-menu-button" style="display:inline-flex;align-items:center;justify-content:center;margin-left:1rem;">
+MENU
+</button>
+</div>
+<nav class="hidden md:hidden flex-col gap-4 px-8 pb-5 border-t border-white/10 bg-surface/95 backdrop-blur-md" id="mobile-nav">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#about">About</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#skills">Skills</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#projects">Projects</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-body-md text-body-md" href="#connect">Connect</a>
+<a class="inline-flex w-fit items-center gap-2 bg-primary text-on-primary px-5 py-2 rounded font-code-label text-code-label hover:opacity-90 transition-opacity" download="curriculumvitae.pdf" href="curriculumvitae.pdf">Download CV</a>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="min-h-[819px] flex flex-col justify-center items-start px-margin-mobile md:px-gutter max-w-container-max mx-auto relative mt-stack-lg">
+<div class="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+<div class="mb-4">
+<span class="font-code-label text-code-label text-secondary tracking-widest uppercase">HELLO, I'M</span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-primary mb-2">Elias Mumo</h1>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6">Creative Coder</h2>
+<p class="hero-copy font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-stack-md">
+            Turning ideas into elegant digital experiences
+        </p>
+<div class="flex flex-col sm:flex-row gap-4 mb-12">
+<a class="bg-primary text-on-primary font-code-label text-code-label px-8 py-3 rounded hover:bg-primary/90 transition-colors text-center" href="#connect">
+                GET IN TOUCH
             </a>
-            <div class="social-links">
-                <a href="https://github.com/EliasMumo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <i class='bx bxl-github'></i>
-                </a>
-                <a href="https://www.linkedin.com/in/elias-mumo-106342314" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-                <a href="mailto:elismisfit@gmail.com" aria-label="Email">
-                    <i class='bx bx-envelope'></i>
-                </a>
+<a class="border border-outline-variant text-on-surface font-code-label text-code-label px-8 py-3 rounded hover:border-primary hover:text-primary transition-colors text-center" href="#projects">
+                VIEW WORK
+            </a>
+</div>
+<div class="flex flex-wrap gap-6 text-sm text-on-surface-variant font-code-label">
+<div class="flex items-center gap-2"><span class="text-secondary font-bold">4+</span> shipped builds</div>
+<div class="flex items-center gap-2"><span class="text-secondary font-bold">Web</span> experiences</div>
+<div class="flex items-center gap-2"><span class="text-secondary font-bold">Android</span> client app</div>
+</div>
+<div class="mt-16 flex flex-col items-center opacity-50 absolute bottom-8 left-1/2 -translate-x-1/2">
+<span class="text-xs tracking-widest mb-2 font-code-label">SCROLL</span>
+<span class="material-symbols-outlined animate-bounce">expand_more</span>
+</div>
+</section>
+<!-- About Me -->
+<section class="px-margin-mobile md:px-gutter max-w-container-max mx-auto py-stack-lg border-t border-white/5 relative" id="about">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-[80px] -z-10 pointer-events-none"></div>
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-stack-sm">About Me</h2>
+<div class="w-16 h-1 bg-primary mb-stack-md mx-auto rounded"></div>
+<div class="space-y-6 font-body-md text-body-md text-on-surface-variant text-left md:text-center">
+<p>
+                    Passionate software developer with expertise in building responsive, user-centric web applications. My journey into software development began during my teenage years, driven by the dream of creating impactful digital solutions. Today, with certifications in HTML, CSS, JavaScript, and modern development practices, I craft software that delivers exceptional user experiences.
+                </p>
+<p>
+                    I am eager to collaborate on real-world challenges, bringing creativity, technical expertise, and a problem-solving mindset to help businesses achieve their digital goals.
+                </p>
+</div>
+</div>
+</section>
+<!-- Skills -->
+<section class="px-margin-mobile md:px-gutter max-w-container-max mx-auto py-stack-lg border-t border-white/5" id="skills">
+<div class="flex flex-col items-center mb-stack-md">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-stack-sm">Skills</h2>
+<div class="w-16 h-1 bg-primary mb-8 mx-auto rounded"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<!-- Skill Card -->
+<div class="bg-surface-container-high border border-outline-variant/30 rounded-lg p-6 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-colors group relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-primary transition-colors">html</span>
+<span class="font-code-label text-code-label text-on-surface">HTML5</span>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary to-primary w-[90%]"></div>
+</div>
+</div>
+<div class="bg-surface-container-high border border-outline-variant/30 rounded-lg p-6 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-colors group relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-primary transition-colors">css</span>
+<span class="font-code-label text-code-label text-on-surface">CSS3</span>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary to-primary w-[85%]"></div>
+</div>
+</div>
+<div class="bg-surface-container-high border border-outline-variant/30 rounded-lg p-6 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-colors group relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-primary transition-colors">javascript</span>
+<span class="font-code-label text-code-label text-on-surface">JavaScript</span>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary to-primary w-[80%]"></div>
+</div>
+</div>
+<div class="bg-surface-container-high border border-outline-variant/30 rounded-lg p-6 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-colors group relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-primary transition-colors">devices</span>
+<span class="font-code-label text-code-label text-on-surface text-center">Responsive<br/>Design</span>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary to-primary w-[95%]"></div>
+</div>
+</div>
+<div class="bg-surface-container-high border border-outline-variant/30 rounded-lg p-6 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-colors group relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-4xl text-on-surface-variant group-hover:text-primary transition-colors">code</span>
+<span class="font-code-label text-code-label text-on-surface text-center">Git &amp; GitHub</span>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary to-primary w-[75%]"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education & Certifications -->
+<section class="px-margin-mobile md:px-gutter max-w-container-max mx-auto py-stack-lg border-t border-white/5 relative">
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+<div class="mb-stack-md">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-stack-sm">Education &amp; Certifications</h2>
+<div class="w-16 h-1 bg-primary rounded"></div>
+</div>
+<div class="space-y-4 max-w-4xl">
+<!-- Cert Card -->
+<div class="bg-surface-container border border-outline-variant/20 rounded-lg p-6 hover:bg-surface-container-high transition-colors flex flex-col md:flex-row justify-between md:items-center gap-4">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface text-lg md:text-xl mb-1">Responsive Web Design Certification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">freeCodeCamp</p>
+</div>
+<a class="flex items-center gap-2 text-primary font-code-label text-code-label hover:text-primary-fixed-dim transition-colors group" href="https://www.freecodecamp.org/certification/EliasMumo/responsive-web-design" rel="noopener noreferrer" target="_blank">
+                    View Certificate
+                    <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="bg-surface-container border border-outline-variant/20 rounded-lg p-6 hover:bg-surface-container-high transition-colors flex flex-col md:flex-row justify-between md:items-center gap-4">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface text-lg md:text-xl mb-1">HTML Certification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Codedex</p>
+</div>
+<a class="flex items-center gap-2 text-primary font-code-label text-code-label hover:text-primary-fixed-dim transition-colors group" href="https://www.codedex.io/certificates/8c106e5b-80da-484a-b399-aff2e591614b" rel="noopener noreferrer" target="_blank">
+                    View Certificate
+                    <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="bg-surface-container border border-outline-variant/20 rounded-lg p-6 hover:bg-surface-container-high transition-colors flex flex-col md:flex-row justify-between md:items-center gap-4">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface text-lg md:text-xl mb-1">CSS Certification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Codedex</p>
+</div>
+<a class="flex items-center gap-2 text-primary font-code-label text-code-label hover:text-primary-fixed-dim transition-colors group" href="https://www.codedex.io/certificates/47af8b7b-51b1-4b9e-8f10-fe8a3ae8ad23" rel="noopener noreferrer" target="_blank">
+                    View Certificate
+                    <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="bg-surface-container border border-outline-variant/20 rounded-lg p-6 hover:bg-surface-container-high transition-colors flex flex-col md:flex-row justify-between md:items-center gap-4">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface text-lg md:text-xl mb-1">JavaScript Certification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Codedex</p>
+</div>
+<a class="flex items-center gap-2 text-primary font-code-label text-code-label hover:text-primary-fixed-dim transition-colors group" href="https://www.codedex.io/certificates/377ac906-d771-4251-8a9d-1a1a21946ba5" rel="noopener noreferrer" target="_blank">
+                    View Certificate
+                    <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="bg-surface-container border border-outline-variant/20 rounded-lg p-6 hover:bg-surface-container-high transition-colors flex flex-col md:flex-row justify-between md:items-center gap-4">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface text-lg md:text-xl mb-1">Power Learn Project Certification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Power Learn Project Africa</p>
+</div>
+<a class="flex items-center gap-2 text-primary font-code-label text-code-label hover:text-primary-fixed-dim transition-colors group" href="https://academy.powerlearnprojectafrica.org/certificates?scholarship=75da9624-f5ad-46fd-a855-492328893f26" rel="noopener noreferrer" target="_blank">
+                    View Certificate
+                    <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Projects -->
+<section class="px-margin-mobile md:px-gutter max-w-container-max mx-auto py-stack-lg border-t border-white/5" id="projects">
+<div class="flex flex-col items-center mb-stack-md">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-stack-sm">Projects</h2>
+<div class="w-16 h-1 bg-primary mb-8 mx-auto rounded"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Project Card -->
+<div class="bg-surface-container border border-outline-variant/30 rounded-xl p-8 hover:border-primary/50 transition-colors group relative overflow-hidden">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl">home</span>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">house</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-xl">DwellMerge</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 min-h-[60px]">
+                    A rental property search platform built to help users discover homes with a focused, modern browsing experience.
+                </p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 bg-surface-container-highest border-l-2 border-primary text-on-surface font-code-label text-xs rounded-r">Real Estate</span>
+<span class="px-3 py-1 bg-surface-container-highest border-l-2 border-primary text-on-surface font-code-label text-xs rounded-r">Web App</span>
+<span class="px-3 py-1 bg-surface-container-highest border-l-2 border-primary text-on-surface font-code-label text-xs rounded-r">Responsive UI</span>
+</div>
+<div class="flex gap-4">
+<a class="flex items-center gap-2 border border-outline-variant/50 text-on-surface px-4 py-2 rounded text-sm hover:bg-surface-container-highest transition-colors font-code-label" href="https://www.dwellmerge.com/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">open_in_new</span> Live Site
+                    </a>
+<a class="flex items-center gap-2 border border-outline-variant/50 text-on-surface px-4 py-2 rounded text-sm hover:bg-surface-container-highest transition-colors font-code-label" href="https://github.com/EliasMumo/dwellmerge" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">code</span> GitHub
+                    </a>
+</div>
+</div>
+<!-- Project Card -->
+<div class="bg-surface-container border border-outline-variant/30 rounded-xl p-8 hover:border-primary/50 transition-colors group relative overflow-hidden">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl">business</span>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">article</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-xl">Kotara</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 min-h-[60px]">
+                    A professional company website built for a client.
+                </p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 bg-surface-container-highest border-l-2 border-primary text-on-surface font-code-label text-xs rounded-r">Business Website</span>
+<span class="px-3 py-1 bg-surface-container-highest border-l-2 border-primary text-on-surface font-code-label text-xs rounded-r">Client Work</span>
+</div>
+<div class="flex gap-4">
+<a class="flex items-center gap-2 border border-outline-variant/50 text-on-surface px-4 py-2 rounded text-sm hover:bg-surface-container-highest transition-colors font-code-label" href="https://kotara.co.ke/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">open_in_new</span> Live Site
+                    </a>
+</div>
+</div>
+<!-- Project Card -->
+<div class="bg-surface-container border border-outline-variant/30 rounded-xl p-8 hover:border-primary/50 transition-colors group relative overflow-hidden">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl">sports_soccer</span>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">trending_up</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-xl">Prime Predict Tips</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 min-h-[60px]">
+                    A sports prediction website with football tips and match insights.
+                </p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 bg-surface-container-highest border-l-2 border-primary text-on-surface font-code-label text-xs rounded-r">Sports Tips</span>
+<span class="px-3 py-1 bg-surface-container-highest border-l-2 border-primary text-on-surface font-code-label text-xs rounded-r">Live Site</span>
+<span class="px-3 py-1 bg-surface-container-highest border-l-2 border-primary text-on-surface font-code-label text-xs rounded-r">Analytics UI</span>
+</div>
+<div class="flex gap-4">
+<a class="flex items-center gap-2 border border-outline-variant/50 text-on-surface px-4 py-2 rounded text-sm hover:bg-surface-container-highest transition-colors font-code-label" href="https://www.primepredicttips.com/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">open_in_new</span> Live Site
+                    </a>
+</div>
+</div>
+<!-- Project Card -->
+<div class="bg-surface-container border border-outline-variant/30 rounded-xl p-8 hover:border-primary/50 transition-colors group relative overflow-hidden">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-6xl">smartphone</span>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">phone_iphone</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-xl">Football Predictions Pro Tips</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 min-h-[60px]">
+                    A client Android app for daily football predictions, high-odds tips, and match analysis.
+                </p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 bg-surface-container-highest border-l-2 border-primary text-on-surface font-code-label text-xs rounded-r">Google Play</span>
+<span class="px-3 py-1 bg-surface-container-highest border-l-2 border-primary text-on-surface font-code-label text-xs rounded-r">Client App</span>
+<span class="px-3 py-1 bg-surface-container-highest border-l-2 border-primary text-on-surface font-code-label text-xs rounded-r">Mobile</span>
+</div>
+<div class="flex gap-4">
+<a class="flex items-center gap-2 border border-outline-variant/50 text-on-surface px-4 py-2 rounded text-sm hover:bg-surface-container-highest transition-colors font-code-label" href="https://play.google.com/store/apps/details?id=com.flore.footballtips" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">play_arrow</span> Google Play
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Interests -->
+<section class="px-margin-mobile md:px-gutter max-w-container-max mx-auto py-stack-lg border-t border-white/5 relative">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-stack-sm">Interests</h2>
+<div class="w-16 h-1 bg-primary mb-stack-md mx-auto rounded"></div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                I am deeply interested in web and mobile development, crafting websites and applications that are visually appealing and functional. When not coding, I enjoy movies and long walks, which inspire my creativity and problem-solving mindset.
+            </p>
+</div>
+</section>
+<!-- Download CV Full Width -->
+<section class="w-full bg-surface-container-high py-stack-lg my-stack-lg">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex flex-col items-center text-center">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-stack-sm">Download CV</h2>
+<div class="w-16 h-1 bg-primary mb-6 mx-auto rounded"></div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-lg">
+                Get a detailed overview of my skills and experience by downloading my CV.
+            </p>
+<a class="flex items-center gap-2 bg-on-surface text-surface font-code-label text-code-label px-8 py-4 rounded hover:bg-primary hover:text-on-primary transition-colors" download="curriculumvitae.pdf" href="curriculumvitae.pdf">
+<span class="material-symbols-outlined">download</span> DOWNLOAD CV
+            </a>
+</div>
+</section>
+<!-- Let's Connect -->
+<section class="px-margin-mobile md:px-gutter max-w-container-max mx-auto py-stack-lg" id="connect">
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-stack-sm">Let's Connect</h2>
+<div class="w-16 h-1 bg-primary mb-6 mx-auto rounded"></div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-10">
+                Have a project in mind or just want to say hello? I'd love to hear from you!
+            </p>
+<a class="flex items-center justify-center w-16 h-16 bg-surface-container rounded-full border border-outline-variant/30 hover:border-primary text-on-surface hover:text-primary transition-all mb-8 hover:scale-110" href="mailto:elismisfit@gmail.com">
+<span class="material-symbols-outlined text-2xl">mail</span>
+</a>
+<div class="flex gap-6">
+<a class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-highest border border-transparent hover:border-primary/50 text-on-surface-variant hover:text-primary transition-colors" href="https://github.com/EliasMumo" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined">code</span>
+</a>
+<a class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-highest border border-transparent hover:border-primary/50 text-on-surface-variant hover:text-primary transition-colors" href="https://www.linkedin.com/in/elias-mumo-106342314" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined">work</span>
+</a>
+<a class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-highest border border-transparent hover:border-primary/50 text-on-surface-variant hover:text-primary transition-colors" href="mailto:elismisfit@gmail.com">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container w-full border-t border-white/5 mt-stack-lg">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-container-max mx-auto gap-6">
+<div class="font-headline-md text-headline-md font-bold text-primary">Elias Mumo</div>
+<nav class="flex flex-wrap justify-center gap-6 font-code-label text-code-label">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="https://github.com/EliasMumo" rel="noopener noreferrer" target="_blank">Github</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="https://www.linkedin.com/in/elias-mumo-106342314" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+</nav>
+<div class="font-body-md text-body-md text-on-surface-variant text-sm">
+                © 2026 Elias Mumo. All rights reserved.
             </div>
-        </section>
-    </main>
+</div>
+<div class="text-center py-4 border-t border-white/5 font-code-label text-xs text-on-surface-variant/50">
+            Crafted with <span class="material-symbols-outlined text-[10px] inline-block align-middle">favorite</span> by Elias Mumo © 2026
+        </div>
+</footer>
+<script>
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileNav = document.getElementById('mobile-nav');
 
-    <footer>
-        <p>Crafted with <i class='bx bx-heart'></i> by Elias Mumo &copy; 2026</p>
-    </footer>
+if (mobileMenuButton && mobileNav) {
+    const syncMobileMenuVisibility = () => {
+        mobileMenuButton.style.display = window.innerWidth >= 768 ? 'none' : 'inline-flex';
+    };
 
-    <script src="script.js"></script>
-</body>
-</html>
+    syncMobileMenuVisibility();
+    window.addEventListener('resize', syncMobileMenuVisibility);
+
+    mobileMenuButton.addEventListener('click', () => {
+        const isOpen = !mobileNav.classList.contains('hidden');
+        mobileNav.classList.toggle('hidden', isOpen);
+        mobileNav.classList.toggle('flex', !isOpen);
+        mobileMenuButton.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    mobileNav.addEventListener('click', (event) => {
+        if (event.target.closest('a')) {
+            mobileNav.classList.add('hidden');
+            mobileNav.classList.remove('flex');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+        }
+    });
+}
+</script>
+</body></html>
