@@ -15,6 +15,10 @@
 <body>
     <header>
         <nav>
+            <a class="brand" href="#hero" aria-label="Elias Mumo home">
+                <span>EM</span>
+                <strong>Elias Mumo</strong>
+            </a>
             <div class="menu-icon">
                 <i class='bx bx-menu'></i>
             </div>
@@ -44,28 +48,71 @@
 
     <main>
         <section id="hero">
-            <div class="hero-content">
-                <span class="hero-greeting">Hello, I'm</span>
-                <h1>Elias Mumo</h1>
-                <h2 class="typing-container">
-                    <span class="typing-text"></span>
-                    <span class="cursor">|</span>
-                </h2>
-                <p class="hero-tagline">Turning ideas into elegant digital experiences</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="cta-button">Get in Touch</a>
-                    <a href="#projects" class="cta-button secondary">View Work</a>
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="hero-greeting">Creative software developer</span>
+                    <h1>Elias Mumo</h1>
+                    <h2 class="typing-container">
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-tagline">I design and build responsive web and mobile experiences with clean interfaces, sharp interaction, and practical delivery.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="cta-button">Get in Touch</a>
+                        <a href="#projects" class="cta-button secondary">View Work</a>
+                    </div>
+                    <div class="hero-proof" aria-label="Portfolio highlights">
+                        <span><strong>4+</strong> shipped builds</span>
+                        <span><strong>Web</strong> experiences</span>
+                        <span><strong>Android</strong> client app</span>
+                    </div>
                 </div>
-                <div class="hero-proof" aria-label="Portfolio highlights">
-                    <span><strong>4+</strong> shipped builds</span>
-                    <span><strong>Web</strong> experiences</span>
-                    <span><strong>Android</strong> client app</span>
-                </div>
+                <aside class="hero-studio" aria-label="Portfolio focus">
+                    <div class="studio-topline">
+                        <span class="status-dot"></span>
+                        Available for client work
+                    </div>
+                    <div class="studio-frame">
+                        <span>01</span>
+                        <strong>Responsive websites</strong>
+                    </div>
+                    <div class="studio-frame">
+                        <span>02</span>
+                        <strong>Product interfaces</strong>
+                    </div>
+                    <div class="studio-frame">
+                        <span>03</span>
+                        <strong>Mobile app delivery</strong>
+                    </div>
+                    <a class="studio-link" href="mailto:elismisfit@gmail.com">
+                        <i class='bx bx-envelope'></i>
+                        elismisfit@gmail.com
+                    </a>
+                </aside>
             </div>
             <div class="scroll-indicator">
                 <span>Scroll</span>
                 <i class='bx bx-chevron-down'></i>
             </div>
+        </section>
+
+        <section class="work-strip" aria-label="Selected work">
+            <a href="https://www.dwellmerge.com/" target="_blank" rel="noopener noreferrer">
+                <span>DwellMerge</span>
+                <i class='bx bx-link-external'></i>
+            </a>
+            <a href="https://kotara.co.ke/" target="_blank" rel="noopener noreferrer">
+                <span>Kotara</span>
+                <i class='bx bx-link-external'></i>
+            </a>
+            <a href="https://www.primepredicttips.com/" target="_blank" rel="noopener noreferrer">
+                <span>Prime Predict Tips</span>
+                <i class='bx bx-link-external'></i>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.flore.footballtips" target="_blank" rel="noopener noreferrer">
+                <span>Football Predictions Pro Tips</span>
+                <i class='bx bx-link-external'></i>
+            </a>
         </section>
 
         <section id="about">
@@ -245,6 +292,7 @@
             <p class="contact-intro">Have a project in mind or just want to say hello? I'd love to hear from you!</p>
             <a href="mailto:elismisfit@gmail.com" class="email-button" aria-label="Send me an email">
                 <i class='bx bx-envelope'></i>
+                <span>Email Elias</span>
             </a>
             <div class="social-links">
                 <a href="https://github.com/EliasMumo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
